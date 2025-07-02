@@ -4,12 +4,69 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Volunteer Housing Spain</title>
-  <link href="style.css" rel="stylesheet">
+  <style>
+    :root {
+      --eu-blue: #003399;
+      --eu-yellow: #ffcc00;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(to bottom, #003399 0%, #ffffff 100%);
+      color: #fff;
+    }
+    header {
+      background-color: var(--eu-blue);
+      padding: 1rem;
+      color: var(--eu-yellow);
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      margin-bottom: 2rem;
+    }
+    a.button {
+      display: inline-block;
+      margin: 1rem;
+      padding: 1rem 2rem;
+      background-color: var(--eu-yellow);
+      color: var(--eu-blue);
+      border-radius: 2rem;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+    a.button:hover {
+      background-color: #ffd700;
+    }
+    section {
+      margin-top: 2rem;
+      background-color: #ffffffdd;
+      color: #000;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to Volunteer Housing Spain</h1>
-  <p>This platform connects verified volunteers with free housing across Spain.</p>
-  <a href="login.html">Volunteer Login</a> | 
-  <a href="host.html">Offer a Room</a>
+  <header>
+    <h1>🇪🇺 Volunteer Housing Spain</h1>
+    <p>Helping volunteers find free, welcoming places to stay across Spain.</p>
+  </header>
+
+  <section>
+    <h2>Get Involved</h2>
+    <p>If you're a verified volunteer, log in to see available rooms.</p>
+    <a href="login.html" class="button">Volunteer Login</a>
+    <p>Have a spare room? Host a volunteer and make a difference.</p>
+    <a href="host.html" class="button">Offer a Room</a>
+  </section>
+
+  <footer style="margin-top:3rem; color: #ddd; font-size: 0.9rem;">
+    Built with ❤️ for community by volunteers. Powered by GitHub Pages.
+  </footer>
 </body>
 </html>
